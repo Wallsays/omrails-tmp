@@ -8,6 +8,9 @@
             Posted by <%= pin.user.name %>
         </strong>
     </p>
+    <p>
+        <%= pin.category.name  %>
+    </p>
     <% if current_user == pin.user %>
         <p>
           <%= link_to 'Edit', edit_pin_path(pin) %>
