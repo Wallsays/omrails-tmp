@@ -10,7 +10,9 @@
         </strong>
     </p>
     <p>
-        <%= pin.category.name  %>
+        <% if pin.category %>
+            <%= pin.category.name  %>
+        <% end %>
     </p>
     <% if current_user == pin.user %>
         <p>

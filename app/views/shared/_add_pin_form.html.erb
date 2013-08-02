@@ -5,6 +5,7 @@
   <%= f.error_notification %>
 -
   <%= f.input :image, label: "Upload an image" %>
+  <%= f.association :category, collection: Category.all(order: 'name'), prompt: "Choose a Category" %>
   <%= f.input :description, as: :text, input_html: { rows: "3" } %>
  
 

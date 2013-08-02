@@ -7,7 +7,11 @@
   			<%= @pin.description %>
 			</p>
 			<p>
- 		  	<b>Description:</b>
+ 		  	<b>Category:</b>
+  			<%= @pin.category.name %>
+			</p>
+			<p>
+ 		  	<b>User:</b>
   			<%= @pin.user.name %>
 			</p>
 			<% if current_user == @pin.user %>
