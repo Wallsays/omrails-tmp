@@ -4,4 +4,8 @@ class Category < ActiveRecord::Base
 
   has_many :pins
 
+  # def to_param
+  #   "#{name.parameterize}"
+  # end
+
 end

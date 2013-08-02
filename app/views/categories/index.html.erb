@@ -1,0 +1,8 @@
+<p />
+<%= link_to "Add category", new_category_path() %>
+<% @category.each do |cat|  %>
+  <br />
+  <%= link_to cat.name, category_path(cat) %>
+  <%= link_to "edit", edit_category_path(cat) %>
+  <%= link_to "delete", cat, method: :delete, confirm: "Are you sure?" %>
+<% end %>
