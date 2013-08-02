@@ -7,8 +7,10 @@
   			<%= @pin.description %>
 			</p>
 			<p>
- 		  	<b>Category:</b>
-  			<%= @pin.category.name %>
+				<% if @pin.category %> 
+ 		  		<b>Category:</b>
+  				<%= @pin.category.name %>
+				<% end %>
 			</p>
 			<p>
  		  	<b>User:</b>
